@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CEMA | ABC Learning</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body onload="loadLetter('A')">
+
+<header>
+  <div class="container navbar">
+    <div class="logo">CEMA<span>★</span></div>
+    <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="merchandise.html">Merchandise</a>
+      <a href="abc.html">ABC Learning</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn-donate" href="contact.html">❤ Donate</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">ABC Learning Playground</h2>
+    <p class="section-subtitle">Tap a letter, then click the ⭐ Magic button to animate!</p>
+
+    <div class="abc-layout">
+
+      <div class="letters">
+        <h3 style="font-weight:900; margin-bottom:12px;">Letters</h3>
+        <div class="letters-grid">
+          <button class="letter-btn" id="letter-A" onclick="loadLetter('A')">A</button>
+          <button class="letter-btn" id="letter-B" onclick="loadLetter('B')">B</button>
+          <button class="letter-btn" id="letter-C" onclick="loadLetter('C')">C</button>
+          <button class="letter-btn" id="letter-D" onclick="loadLetter('D')">D</button>
+          <button class="letter-btn" id="letter-E" onclick="loadLetter('E')">E</button>
+          <button class="letter-btn" id="letter-F" onclick="loadLetter('F')">F</button>
+          <button class="letter-btn" id="letter-G" onclick="loadLetter('G')">G</button>
+          <button class="letter-btn" id="letter-H" onclick="loadLetter('H')">H</button>
+          <button class="letter-btn" id="letter-I" onclick="loadLetter('I')">I</button>
+          <button class="letter-btn" id="letter-J" onclick="loadLetter('J')">J</button>
+          <button class="letter-btn" id="letter-K" onclick="loadLetter('K')">K</button>
+          <button class="letter-btn" id="letter-L" onclick="loadLetter('L')">L</button>
+          <button class="letter-btn" id="letter-M" onclick="loadLetter('M')">M</button>
+          <button class="letter-btn" id="letter-N" onclick="loadLetter('N')">N</button>
+          <button class="letter-btn" id="letter-O" onclick="loadLetter('O')">O</button>
+          <button class="letter-btn" id="letter-P" onclick="loadLetter('P')">P</button>
+          <button class="letter-btn" id="letter-Q" onclick="loadLetter('Q')">Q</button>
+          <button class="letter-btn" id="letter-R" onclick="loadLetter('R')">R</button>
+          <button class="letter-btn" id="letter-S" onclick="loadLetter('S')">S</button>
+          <button class="letter-btn" id="letter-T" onclick="loadLetter('T')">T</button>
+          <button class="letter-btn" id="letter-U" onclick="loadLetter('U')">U</button>
+          <button class="letter-btn" id="letter-V" onclick="loadLetter('V')">V</button>
+          <button class="letter-btn" id="letter-W" onclick="loadLetter('W')">W</button>
+          <button class="letter-btn" id="letter-X" onclick="loadLetter('X')">X</button>
+          <button class="letter-btn" id="letter-Y" onclick="loadLetter('Y')">Y</button>
+          <button class="letter-btn" id="letter-Z" onclick="loadLetter('Z')">Z</button>
+        </div>
+      </div>
+
+      <div>
+        <div class="stage" id="abcStage"></div>
+
+        <div class="word-box">
+          <span id="wordLabel">Click an object!</span>
+          <button class="audio-btn" onclick="speakWord()">🔊 Say</button>
+        </div>
+      </div>
+
+      <div class="magic-panel">
+        <h3 style="font-weight:900;">Magic Tools</h3>
+        <button class="magic-btn" onclick="magicTrigger()">⭐ Magic</button>
+        <p style="font-size:0.9rem; opacity:0.8; text-align:center;">
+          Tap magic to animate objects.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h4>CEMA</h4>
+      <p>Creative Education & Mentorship Africa.</p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="about.html">About</a></p>
+      <p><a href="merchandise.html">Merchandise</a></p>
+      <p><a href="contact.html">Contact</a></p>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>Eldoret, Kenya</p>
+      <p>info@cemaafrica.org</p>
+      <p>+254 700 000 000</p>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

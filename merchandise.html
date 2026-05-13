@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CEMA | Merchandise</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header>
+  <div class="container navbar">
+    <div class="logo">CEMA<span>★</span></div>
+    <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="merchandise.html">Merchandise</a>
+      <a href="abc.html">ABC Learning</a>
+      <a href="contact.html">Contact</a>
+
+      <a class="btn-donate" href="#" onclick="toggleCart()">🛒 Cart (<span id="cartCount">0</span>)</a>
+    </nav>
+  </div>
+</header>
+
+<div class="cart-popup" id="cartPopup">
+  <h3>Your Cart</h3>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-footer">
+    <span>Total:</span>
+    <span id="cartTotal">KSh 0</span>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Merchandise</h2>
+    <p class="section-subtitle">Wear, read, and share creativity!</p>
+
+    <div class="filters">
+      <button class="filter-btn active" id="filter-all" onclick="filterProducts('all')">All</button>
+      <button class="filter-btn" id="filter-books" onclick="filterProducts('books')">Books</button>
+      <button class="filter-btn" id="filter-shirts" onclick="filterProducts('shirts')">T-Shirts</button>
+      <button class="filter-btn" id="filter-cards" onclick="filterProducts('cards')">Learning Cards</button>
+      <button class="filter-btn" id="filter-kits" onclick="filterProducts('kits')">Activity Kits</button>
+    </div>
+
+    <div class="shop-grid">
+
+      <div class="product" data-category="books">
+        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=60">
+        <h4>My First African Stories</h4>
+        <p class="price">KSh 800</p>
+        <button onclick="addToCart('My First African Stories', 800)">Add to Cart</button>
+      </div>
+
+      <div class="product" data-category="shirts">
+        <img src="https://images.unsplash.com/photo-1520975958221-76fdbbdb82c6?auto=format&fit=crop&w=800&q=60">
+        <h4>CEMA Kids T-Shirt</h4>
+        <p class="price">KSh 650</p>
+        <button onclick="addToCart('CEMA Kids T-Shirt', 650)">Add to Cart</button>
+      </div>
+
+      <div class="product" data-category="cards">
+        <img src="https://images.unsplash.com/photo-1588072432836-6c90f1b9d51a?auto=format&fit=crop&w=800&q=60">
+        <h4>ABC Flash Cards</h4>
+        <p class="price">KSh 450</p>
+        <button onclick="addToCart('ABC Flash Cards', 450)">Add to Cart</button>
+      </div>
+
+      <div class="product" data-category="kits">
+        <img src="https://images.unsplash.com/photo-1527751171053-6c4d0f7b3cf3?auto=format&fit=crop&w=800&q=60">
+        <h4>Creative Activity Kit</h4>
+        <p class="price">KSh 1200</p>
+        <button onclick="addToCart('Creative Activity Kit', 1200)">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h4>CEMA</h4>
+      <p>Creative Education & Mentorship Africa.</p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="about.html">About</a></p>
+      <p><a href="abc.html">ABC Learning</a></p>
+      <p><a href="contact.html">Contact</a></p>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>Eldoret, Kenya</p>
+      <p>info@cemaafrica.org</p>
+      <p>+254 700 000 000</p>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
